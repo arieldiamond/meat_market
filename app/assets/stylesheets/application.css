@@ -13,3 +13,63 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0px 20px 20px 20px;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 5px;
+  background-color: white;
+}
+
+h1 {
+	text-align:center;
+	font-size: 50px;
+}
+
+body {
+	background-color: green;
+	background-image: url('/grass.jpg');
+}
+
+.nav {
+	background-color: white;
+	border-bottom: 4px solid gray;
+	padding: 8px;
+}
+
+.nav a {
+	text-decoration: none;
+	color:black;
+	padding-left: 10px;
+}
+
+.cow_pic img {
+	margin-top: 50px;
+	width:350px;
+	float:left;
+	padding: 40px 40px 40px 40px;
+	border:8px solid white;
+	border-right: 3px dashed gray;
+}
+
+.cow_pic img:hover {
+	border: 8px red solid;
+}
+
+.grill_pic img {
+	margin-top: 40px;
+	width:320px;
+	float:right;
+	border:8px solid white;
+}
+
+.grill_pic img:hover {
+	border: 8px red solid;
+}
+
+.foot {
+	clear:both;
+}

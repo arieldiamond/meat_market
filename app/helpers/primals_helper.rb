@@ -1,0 +1,2 @@
+module PrimalsHelper
+end

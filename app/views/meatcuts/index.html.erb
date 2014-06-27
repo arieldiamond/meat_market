@@ -1,0 +1,27 @@
+<h1>Listing meatcuts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cut name</th>
+      <th>Primal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meatcuts.each do |meatcut| %>
+      <tr>
+        <td><%= meatcut.cut_name %></td>
+        <td><%= meatcut.primal_id %></td>
+        <td><%= link_to 'Show', meatcut %></td>
+        <td><%= link_to 'Edit', edit_meatcut_path(meatcut) %></td>
+        <td><%= link_to 'Destroy', meatcut, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Meatcut', new_meatcut_path %>

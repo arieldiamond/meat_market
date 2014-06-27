@@ -1,0 +1,25 @@
+<%= form_for(@meatcut) do |f| %>
+  <% if @meatcut.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@meatcut.errors.count, "error") %> prohibited this meatcut from being saved:</h2>
+
+      <ul>
+      <% @meatcut.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cut_name %><br>
+    <%= f.text_field :cut_name %>
+  </div>
+  <div class="field">
+    <%= f.label :primal_id %><br>
+    <%= f.number_field :primal_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cut name:</strong>
+  <%= @meatcut.cut_name %>
+</p>
+
+<p>
+  <strong>Primal:</strong>
+  <%= @meatcut.primal_id %>
+</p>
+
+<%= link_to 'Edit', edit_meatcut_path(@meatcut) %> |
+<%= link_to 'Back', meatcuts_path %>

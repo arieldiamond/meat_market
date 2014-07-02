@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(version: 20140626232755) do
 
   create_table "animals", force: true do |t|
-    t.string   "name"
+    t.string   "animal"
+    t.string   "meat_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140626232755) do
   end
 
   create_table "primals", force: true do |t|
-    t.string   "name"
+    t.string   "anatomy"
     t.integer  "animal_id"
     t.datetime "created_at"
     t.datetime "updated_at"

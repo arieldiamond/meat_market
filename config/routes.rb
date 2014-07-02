@@ -1,17 +1,22 @@
 Rails.application.routes.draw do
-  resources :pins
+  
 
-  resources :users
+  resources :users do
+    resources :pins, shallow: :true
+  end
 
+  resources :animals do
+    resources :primals, shallow: :true do
+      resources :meatcuts, shallow: :true
+    end
+  end
+  
   resources :techniques
 
   resources :recipes
 
-  resources :meatcuts
 
-  resources :primals
 
-  resources :animals
 
   root 'welcome#index'
 

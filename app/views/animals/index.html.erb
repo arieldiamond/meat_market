@@ -1,24 +1,31 @@
+<div id="animals">
 <h1>Animals We Eat</h1>
 
 <div id="animal_cow" class="animal_icons">
-  <img src="cow.png"><%#= link_to 'Cow, otherwise known as Beef', animal_path(id: 1) %>
+  <%= link_to(image_tag("/cow.png"), animal_path(id: 1)) %>
+  <div class="a_label">Cow, otherwise known as Beef</div>
 </div>
 
 <div id="animal_sheep" class="animal_icons">
-  <img src="lamb.png"><%#= link_to 'Sheep, otherwise known as Mutton or Lamb', animal_path(id: 2) %>
+  <%= link_to(image_tag("/lamb.png"), animal_path(id: 2)) %>
+   <div class="a_label">Sheep, otherwise known as Mutton or Lamb</div>
 </div>
 
 <div id="animal_pig" class="animal_icons">
-  <img src="pig.png"> <%#= link_to 'Pig, otherwise known as Pork', animal_path(id: 3) %>
+  <%= link_to(image_tag("/pig.png"), animal_path(id: 3)) %>
+  <div class="a_label">Pig, otherwise known as Pork </div>
 </div>
 
 <div id="animal_goat" class="animal_icons">
-  <img src="goat.png"> <%#= link_to 'Goat is just goat.', animal_path(id: 5) %>
+  <%= link_to(image_tag("/goat.png"), animal_path(id: 5)) %>
+  <div class="a_label">Goat is just goat.</div>
 </div>
 
 <div id="animal_bison" class="animal_icons">
-  <img src="bison.png"> <%#= link_to 'Bison is not buffalo.', animal_path(id: 4) %>
+  <%= link_to(image_tag("/bison.png"), animal_path(id: 4)) %>
+  <div class="a_label">Bison is not the same as buffalo.</div>
 </div>
 
 <div class="footer">
+</div>
 </div>

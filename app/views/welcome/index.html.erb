@@ -1,9 +1,11 @@
 <div class="cow_pic">
-	<a href="/animals"><img src="SimpleCow.png" alt="To Search By Meat Cut"></a>
+	<%= link_to(image_tag("/SimpleCow.png"), animals_path) %>
+  <div class="hover_label">To Browse By Animal or Meat Cut</div>
 </div>
 
 <div class="grill_pic">
-	<a href="/techniques"><img src="grill.png" alt="To Search By Cooking Technique"></a>
+	<%= link_to(image_tag("/grill.png"), techniques_path) %>
+  <div class="hover_label">To Browse By Cooking Technique</div>
 </div>
-<div class="foot">
+<div class="footer">
 </div>

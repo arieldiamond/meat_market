@@ -2,9 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#animals {
+	h1 {
+		margin-bottom: 40px;
+		font-size: 3em;
+	}
+}
 .animal_icons {
-	margin-left: 0;
-	display: inline;
+	float: left;
+
+	.a_label {
+		visibility: hidden;
+		position: relative;
+		text-align: center;
+		width:200px;
+		bottom:80px;
+		color: #80060C;
+		text-shadow: 1px 1px gray;
+		background-color: white;
+		border: 1px dotted gray;
+	}
+	&:hover .a_label {
+		visibility: visible;
+	}
 	img {
 		width: 200px;
 	}

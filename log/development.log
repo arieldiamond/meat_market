@@ -13502,3 +13502,216 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:16:02 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:16:02 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-02 17:21:06 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:32:39 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (2.2ms)[0m  [1mSELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `name' for #<Animal:0x000001036b15d0>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @animal.name %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_animal_path(@animal) %> |
+  app/views/animals/show.html.erb:5:in `_app_views_animals_show_html_erb__2414184660284390355_2175977600'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:32:39 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimal Load (0.1ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for #<Animal:0x000001054c6250>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @animal.name %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_animal_path(@animal) %> |
+  app/views/animals/show.html.erb:5:in `_app_views_animals_show_html_erb__2414184660284390355_2191745400'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1mSELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimal Load (0.1ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-02 17:35:13 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:35:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-07-02 17:35:15 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.2ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered techniques/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)

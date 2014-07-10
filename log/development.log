@@ -13502,3 +13502,647 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:16:02 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:16:02 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-02 17:21:06 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:32:39 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (2.2ms)[0m  [1mSELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `name' for #<Animal:0x000001036b15d0>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @animal.name %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_animal_path(@animal) %> |
+  app/views/animals/show.html.erb:5:in `_app_views_animals_show_html_erb__2414184660284390355_2175977600'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:32:39 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimal Load (0.1ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for #<Animal:0x000001054c6250>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @animal.name %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_animal_path(@animal) %> |
+  app/views/animals/show.html.erb:5:in `_app_views_animals_show_html_erb__2414184660284390355_2191745400'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1mSELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:33:11 -0500
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimal Load (0.1ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-02 17:34:48 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-02 17:35:13 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-02 17:35:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/techniques" for 127.0.0.1 at 2014-07-02 17:35:15 -0500
+Processing by TechniquesController#index as HTML
+  [1m[36mTechnique Load (0.2ms)[0m  [1mSELECT "techniques".* FROM "techniques"[0m
+  Rendered techniques/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 14:15:26 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.1) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 14:15:27 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.1) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/arieldiamond/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/arieldiamond/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+  [1m[36m (6.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAnimals (20140626232228)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (23.2ms)[0m  [1mCREATE TABLE "animals" ("id" serial primary key, "animal" character varying(255), "meat_name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232228"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePrimals (20140626232318)
+  [1m[35m (6.3ms)[0m  BEGIN
+  [1m[36m (16.2ms)[0m  [1mCREATE TABLE "primals" ("id" serial primary key, "anatomy" character varying(255), "animal_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232318"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMeatcuts (20140626232452)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "meatcuts" ("id" serial primary key, "cut_name" character varying(255), "primal_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232452"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRecipes (20140626232555)
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36m (16.8ms)[0m  [1mCREATE TABLE "recipes" ("id" serial primary key, "title" character varying(255), "directions" character varying(255), "ingredients" character varying(255), "creator_id" integer, "meatcut_id" integer, "technique_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232555"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTechniques (20140626232633)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (16.1ms)[0m  [1mCREATE TABLE "techniques" ("id" serial primary key, "name" character varying(255), "description" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232633"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20140626232702)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (15.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232702"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePins (20140626232755)
+  [1m[35m (5.6ms)[0m  BEGIN
+  [1m[36m (8.8ms)[0m  [1mCREATE TABLE "pins" ("id" serial primary key, "user_id" integer, "recipe_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140626232755"]]
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (13.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-07-03 19:16:18.480798"], ["email", "akd@akd.com"], ["password", "123456"], ["updated_at", "2014-07-03 19:16:18.480798"], ["username", "ariel"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "password", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-07-03 19:16:18.506928"], ["email", "cyn@akd.com"], ["password", "123456"], ["updated_at", "2014-07-03 19:16:18.506928"], ["username", "cyn"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "animals" ("animal", "created_at", "meat_name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["animal", "Cow"], ["created_at", "2014-07-03 19:16:18.516364"], ["meat_name", "Beef"], ["updated_at", "2014-07-03 19:16:18.516364"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "animals" ("animal", "created_at", "meat_name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["animal", "Sheep"], ["created_at", "2014-07-03 19:16:18.519321"], ["meat_name", "Lamb"], ["updated_at", "2014-07-03 19:16:18.519321"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "animals" ("animal", "created_at", "meat_name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["animal", "Pig"], ["created_at", "2014-07-03 19:16:18.521123"], ["meat_name", "Pork"], ["updated_at", "2014-07-03 19:16:18.521123"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "animals" ("animal", "created_at", "meat_name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["animal", "Bison"], ["created_at", "2014-07-03 19:16:18.522705"], ["meat_name", "Bison"], ["updated_at", "2014-07-03 19:16:18.522705"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "animals" ("animal", "created_at", "meat_name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["animal", "Goat"], ["created_at", "2014-07-03 19:16:18.524382"], ["meat_name", "Goat"], ["updated_at", "2014-07-03 19:16:18.524382"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["anatomy", "Forequarter"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.533540"], ["updated_at", "2014-07-03 19:16:18.533540"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["anatomy", "Hindquarter"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.536652"], ["updated_at", "2014-07-03 19:16:18.536652"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["anatomy", "Loin"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.539311"], ["updated_at", "2014-07-03 19:16:18.539311"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["anatomy", "Hindquarter"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.541144"], ["updated_at", "2014-07-03 19:16:18.541144"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["anatomy", "Hindquarter"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.543047"], ["updated_at", "2014-07-03 19:16:18.543047"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "primals" ("anatomy", "animal_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["anatomy", "Hindquarter"], ["animal_id", 1], ["created_at", "2014-07-03 19:16:18.544609"], ["updated_at", "2014-07-03 19:16:18.544609"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "meatcuts" ("created_at", "cut_name", "primal_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-03 19:16:18.556454"], ["cut_name", "flatiron"], ["primal_id", 1], ["updated_at", "2014-07-03 19:16:18.556454"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "meatcuts" ("created_at", "cut_name", "primal_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-03 19:16:18.559649"], ["cut_name", "pot roast"], ["primal_id", 1], ["updated_at", "2014-07-03 19:16:18.559649"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meatcuts" ("created_at", "cut_name", "primal_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-03 19:16:18.561427"], ["cut_name", "sirloin"], ["primal_id", 2], ["updated_at", "2014-07-03 19:16:18.561427"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "techniques" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-07-03 19:16:18.614282"], ["description", "Hot, dry heat"], ["name", "Grill"], ["updated_at", "2014-07-03 19:16:18.614282"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "techniques" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-03 19:16:18.616989"], ["description", "Low, slow, and moist"], ["name", "Braise"], ["updated_at", "2014-07-03 19:16:18.616989"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "recipes" ("created_at", "creator_id", "directions", "ingredients", "meatcut_id", "technique_id", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2014-07-03 19:16:18.627320"], ["creator_id", 1], ["directions", "Salt it and grill it"], ["ingredients", "flatiron, salt, pepper"], ["meatcut_id", 1], ["technique_id", 1], ["title", "Grilled Flatiron"], ["updated_at", "2014-07-03 19:16:18.627320"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "pins" ("created_at", "recipe_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-07-03 19:16:18.637505"], ["recipe_id", 1], ["updated_at", "2014-07-03 19:16:18.637505"], ["user_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 140ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 14:16:39 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 14:17:53 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-03 14:29:28 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/2" for 127.0.0.1 at 2014-07-03 14:29:32 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAnimal Load (6.3ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered animals/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 37ms (Views: 21.8ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-06 20:53:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (26.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 170ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animals.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/meatcuts.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/primals.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/techniques.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/animals.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/meatcuts.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/techniques.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/primals.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-06 20:53:57 -0500
+
+
+Started GET "/animals" for 127.0.0.1 at 2014-07-06 20:55:07 -0500
+Processing by AnimalsController#index as HTML
+  Rendered animals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals/1" for 127.0.0.1 at 2014-07-06 20:55:15 -0500
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimal Load (29.2ms)[0m  SELECT  "animals".* FROM "animals"  WHERE "animals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered animals/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 91ms (Views: 13.9ms | ActiveRecord: 68.7ms)
